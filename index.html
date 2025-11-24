@@ -1,12 +1,174 @@
 <!DOCTYPE html>
-<html lang='ru'>
+<html lang="en">
 <head>
-    <meta charset='UTF-8'>
-    <title>Animation</title>
-  <link rel='stylesheet' href='style.css'>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Visit Kuala Lumpur - Travel Guide</title>
+<link rel='stylesheet' href='style.css'>
+  <header>
+  <img 
+    src="https://img.freepik.com/free-vector/hari-merdeka-greeting-card_603843-3354.jpg?semt=ais_hybrid&w=740&q=80" 
+   <img src="logo.png" alt="Kuala Lumpur Logo" class="logo-img" height="40">
 
+       </nav>
+</header>
+  </nav>
+</header>
+
+<style>
+  body {
+    margin: 0;
+    font-family: system-ui, sans-serif;
+    background: #f06d06;
+    color: white;
+  }
+
+ 
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    background: rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(5px);
+  }
+
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2a6dff;
+  }
+
+  nav a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  nav a:hover {
+    text-decoration: underline;
+  }
+
+  
+  .container {
+    display: flex;
+    gap: 30px;
+    padding: 40px;
+    max-width: 1100px;
+    margin: auto;
+  }
+
+  .column {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 25px;
+    border-radius: 10px;
+    animation: fadeIn 0.9s ease forwards;
+    opacity: 0; 
+  }
+
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  img {
+    width: 100%;
+    margin-top: 15px;
+    border-radius: 10px;
+  }
+
+ 
+  .cta-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 22px;
+    background: #2a6dff;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: transform 0.2s ease, background 0.2s ease;
+  }
+
+  .cta-btn:hover {
+    transform: scale(1.05);
+    background: #1e52cc;
+  }
+
+  footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    opacity: 0.8;
+  }
+
+  
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  }
+</style>
 </head>
+
 <body>
-    <div class='block'></div>
+
+<header>
+  <div class="logo">Kuala Lumpur Guide</div>
+  <nav>
+    <a href="#places">Top Places</a>
+    <a href="#food">Food</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+
+  <div class="container">
+    
+        <section id="places" class="column">
+      <h2>Top Places to Visit</h2>
+      <ul>
+        <li>Petronas Twin Towers</li>
+        <li>Batu Caves</li>
+        <li>KL Tower</li>
+        <li>Central Market</li>
+      </ul>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Petronas_Panorama_II_%284to3%29.jpg/640px-Petronas_Panorama_II_%284to3%29.jpg" alt="Petronas Towers">
+
+      <a class="cta-btn" href="#food">Explore Foods</a>
+    </section>
+
+    
+    <section id="food" class="column">
+      <h2>Must-Try Foods</h2>
+      <ul>
+        <li><strong>Nasi Lemak</strong> — Malaysia’s national dish</li>
+        <li><strong>Roti Canai</strong> — Crispy flatbread with curry</li>
+        <li><strong>Char Kuey Teow</strong> — Stir-fried noodles</li>
+        <li><strong>Satay</strong> — Grilled meat & peanut sauce</li>
+      </ul>
+
+      <img src="https://res.klook.com/image/upload/q_85/c_fill,w_750/v1606212613/blog/onv4ms9a9d4jsujk2e22.jpg" alt="Malaysian food">
+    </section>
+
+  </div>
+
+  <section id="contact" style="text-align:center; padding: 40px;">
+    <h2>Contact</h2>
+    <p>Visit the official 
+      <a href="https://en.wikipedia.org/wiki/Kuala_Lumpur" target="_blank" style="color:#2a6dff;">Kuala Lumpur</a> 
+      page for more info.
+    </p>
+  </section>
+
+</main>
+
+<footer>
+  &copy; 2025 Kuala Lumpur Travel Guide
+</footer>
+
 </body>
 </html>
